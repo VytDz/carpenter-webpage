@@ -1,0 +1,157 @@
+
+
+/* =================== Scss variables ============================== */
+$headline-font:  'Alfa Slab One' , cursive;
+$paragraph-font: 'Oxygen', sans-serif;
+$bright-font-collor: #fff0bf;
+/* =================== End Scss variables ========================== */
+
+
+/* ===================== Global attributes ========================== */
+
+body{   
+    width: auto;
+}
+
+p{
+   font-family: $paragraph-font; 
+}
+
+a{
+    color: black;
+}
+
+/* =================== End Global attributes ======================= */
+
+
+
+/* =================== Header attributes =========================== */
+    header{
+            ul{         
+                li{
+                    font-family:  $headline-font;
+                    font-size: 1.2rem;
+                    list-style-type: none;
+                    
+                }          
+            } 
+    } 
+    
+    #index {
+        header{
+            margin: 0;
+            width: auto;
+            min-height: 4rem;        
+            background: url("./img/backgrounds/headerbg.jpg");
+            background-repeat: no-repeat;
+            background-size: inherit;
+
+            }
+        }
+
+    header{
+        margin: 0;
+        width: auto;
+        min-height: 4rem;        
+        background: url("../img/backgrounds/headerbg.jpg");
+        background-repeat: no-repeat;
+        background-size: inherit;
+
+    }
+    
+    header{
+            #logo{
+                    font-family: $headline-font;                  
+                }       
+    }
+/* =================== End Header attributes ======================= */
+
+
+/* =================== Main attributes ============================= */
+main{
+    article{
+        background-color:    rgba(20,18,20,0.3);       
+        h2{
+            color: $bright-font-collor;
+        }
+        p{
+            margin-left: 2rem;
+            color: $bright-font-collor;
+        }
+    }
+}
+
+aside{
+    article{
+        background-color:    rgba(20,18,20,0.3);   
+        h2{
+            color: $bright-font-collor;
+        }
+        p{
+            margin-left: 1rem;
+            color: $bright-font-collor;
+        }
+    }
+}
+
+/* =================== Pages attributes ============================= */
+body#index{
+    background: url("../img/backgrounds/ian-keefe-449093-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 5rem;
+}
+
+body#gallery{
+    background: url("../img/backgrounds/tomasz-pawluk-548096-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 5rem;
+}
+
+body#services{
+    background: url("../img/backgrounds/sweet-ice-cream-photography-88265-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 5rem;
+}
+
+body#about{
+    background: url("../img/backgrounds/robert-ostheimer-42091-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 5rem;
+}
+
+body#contacts{
+    background: url("../img/backgrounds/federico-bottos-674099-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 5rem;
+}
+
+/* =================== End Pages attributes ========================= */
+
+
+
+/* =================== Footer attributes =========================== */
+footer{
+    margin: 0;
+    width: auto;
+    background-color: rgba(20,18,20,0.5); 
+    height: 1rem;
+    font-size: 0.8rem;
+    font-family: $paragraph-font;
+    color: $bright-font-collor;
+    margin-top: 90%;
+}
+
+footer{
+    a{
+        img{
+            height: 1rem;
+            background-color: #fff0bf;
+        }
+    }
+}
+/* =================== End footer attributes ======================= */
