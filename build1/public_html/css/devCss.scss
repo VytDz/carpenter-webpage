@@ -25,6 +25,8 @@ a{
 
 
 
+
+
 /* =================== Header attributes =========================== */
     header{
             ul{         
@@ -37,18 +39,6 @@ a{
             } 
     } 
     
-    #index {
-        header{
-            margin: 0;
-            width: auto;
-            min-height: 4rem;        
-            background: url("./img/backgrounds/headerbg.jpg");
-            background-repeat: no-repeat;
-            background-size: inherit;
-
-            }
-        }
-
     header{
         margin: 0;
         width: auto;
@@ -61,7 +51,9 @@ a{
     
     header{
             #logo{
-                    font-family: $headline-font;                  
+                    font-size: 1rem;
+                    font-family: $headline-font; 
+                    margin-right: 3rem;                
                 }       
     }
 /* =================== End Header attributes ======================= */
@@ -109,15 +101,9 @@ body#gallery{
     background-position: center 5rem;
 }
 
-body#services{
-    background: url("../img/backgrounds/sweet-ice-cream-photography-88265-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 5rem;
-}
 
 body#about{
-    background: url("../img/backgrounds/robert-ostheimer-42091-unsplash.jpg");
+    background: url("../img/backgrounds/sweet-ice-cream-photography-88265-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 5rem;
@@ -155,3 +141,57 @@ footer{
     }
 }
 /* =================== End footer attributes ======================= */
+
+/* =================== Media queries =============================== */
+@media (max-width: 767px){
+    header{
+        ul{ 
+            li{
+                a{
+                display: inline-block;
+                font-family:  $headline-font;
+                font-size: 0.8rem;
+                list-style-type: none; 
+                width: 10%;             
+                }
+                
+            }          
+        } 
+    } 
+
+    header{
+        margin: 0;
+        width: auto;
+        min-height: 2rem;        
+        background: url("../img/backgrounds/headerbg.jpg");
+        background-repeat: no-repeat;
+        background-size: inherit;
+
+    }
+
+    header{
+            #logo{
+                width: 20%;
+                text-align: right;
+                font-size: 1rem;
+                font-family: $headline-font; 
+                margin-right: 4rem;
+                
+                                
+            }       
+    }
+
+    article{
+            h2{
+                font-size: 1rem;
+            }
+            p{
+                font-size: 0.7rem;
+            }
+    }
+
+   aside{
+       display: none;
+   }
+}
+/* =================== End Media queries ========================= */
