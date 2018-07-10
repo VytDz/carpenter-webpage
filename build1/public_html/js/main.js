@@ -20,7 +20,7 @@ window.onclick = function(event) {
             }
         }
     }
-};
+}
 
 
 //************** End Responsive design dropdown menu**************
