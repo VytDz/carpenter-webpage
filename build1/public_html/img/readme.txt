@@ -1,1 +1,0 @@
-images have been removed to save some repository space.
