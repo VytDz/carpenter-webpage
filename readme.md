@@ -1,1 +1,1 @@
-Webpage is live @ www.snekkerpoulsen.com with temporary build. Will update asap.
+Webpage is live @ www.snekkerpoulsen.com with mvp build. I'm updating stuff as I learn.
