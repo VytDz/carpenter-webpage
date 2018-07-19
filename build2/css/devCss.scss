@@ -180,48 +180,9 @@ footer{
                 font-size: 1.3rem;
                 font-family: $headline-font; 
             }
-        }
-
-        .dropdown{
-            display: inline-block;
-            position: relative;
-            float: left;
-            
-            .dropbtn{
-                background-color: alpha($color: #000000);
-                position: absolute;
-                
-                border: none;
-                padding: 0;
-                color: #000000;
-
-            }
-
-            .mDropdown-content{
-                display: none;
-                position: absolute;
-                min-width: 4rem;
-                z-index: 1;
-                    a{
-                        color: #000000;
-                        text-decoration: none;
-                        font-family: $headline-font;
-                        display: block;
-                    }
-            }
-        }
+        }        
   
-    } 
-
-    .show {
-        display: block;
-    }
-    
-    
-
-   
-
-        
+    }      
     
 
     article{
@@ -244,10 +205,6 @@ footer{
    }
 }
 
-@media (min-width: 768px){
-    .dropdown{
-        display: none;
-    }
-}
+
 
 /* =================== End Media queries ========================= */
