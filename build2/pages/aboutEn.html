@@ -4,26 +4,47 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Oxygen" rel="stylesheet">   
-        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">    
-        <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css"> 
-        <link rel="stylesheet" href="../libs/normalize_css/normalize.css">   
-        <link rel="stylesheet" href="../css/main.css">      
+         <!-- **************************** Fonts ******************************* -->
+         <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Oxygen" rel="stylesheet">   
+         <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+         <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+         <!-- **************************** End Fonts *************************** -->
+     
+         <!-- **************************** Libs ******************************** -->      
+         <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css"> 
+         <link rel="stylesheet" href="../libs/normalize_css/normalize.css">
+         <!-- **************************** End Libs **************************** -->  
+         
+         <!-- **************************** Styles ****************************** -->
+         <link rel="stylesheet" href="../css/main.css">
+         <!-- **************************** End Styles *************************** -->   
         <title>SnekkerAnders</title>
     </head>
 <body id="about">    
     <div id="wrapper" class="container-fluid clearfix">
         <header class="row">
-            <nav class="col-md my-4">
+            <nav class="col my-4 main-menu">
                 <ul class="row mx-auto">
-                        <li class="col-1"><a href="./about.html"><img src="../img/icons/if_flag-norway_748131.png" alt=""></a></li>
-                        <li class="col-md "><a href="./indexEn.html">Home</a></li>
-                        <li class="col-md "><a href="./galleryEn.html">Gallery</a></li>                    
-                        <li class="col-md "><a href="./aboutEn.html">About</a></li>                
-                        <li class="col-md "><a href="./contactsEn.html">Contacts</a></li>   
+                    <li class="col-1"><a href="../index.html"><img src="../img/icons/if_flag-norway_748131.png" alt=""></a></li>
+                    <li class="col"><a href="./indexEn.html">Home</a></li>
+                    <li class="col"><a href="./galleryEn.html">Gallery</a></li>                    
+                    <li class="col"><a href="./aboutEn.html">About</a></li>                
+                    <li class="col"><a href="./contactsEn.html">Contacts</a></li>  
                 </ul> <!-- end row -->  
-            </nav> 
-            <div id="logo" class="col-md-2 my-1">
+            </nav>
+
+            <nav class="col my-4 drop-menu">
+                <button  onclick="toggleDropdown()"><i class="fas fa-bars fa-2x"></i></button>
+                <ul id="my-dropdown" class="row mx-auto">
+                    <li class="col-1"><a href="../index.html"><img src="../img/icons/if_flag-norway_748131.png" alt=""></a></li>
+                    <li class="col"><a href="./indexEn.html">Home</a></li>
+                    <li class="col"><a href="./galleryEn.html">Gallery</a></li>                    
+                    <li class="col"><a href="./aboutEn.html">About</a></li>                
+                    <li class="col"><a href="./contactsEn.html">Contacts</a></li>  
+                </ul> <!-- end row -->  
+            </nav>
+
+            <div id="logo" class="col-2 my-1">
                 <h2 >Anders<br>Poulsen</h2> 
             </div>     
         </header><!-- End row -->
@@ -37,16 +58,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel temporibus veniam soluta enim blanditiis, quod vero nobis omnis delectus aliquid ipsam voluptatibus eaque? Debitis dolorem modi dicta, natus quae aliquid?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sunt inventore nisi voluptatibus illo doloremque adipisci consequuntur totam enim quasi corporis distinctio deleniti quo ipsam veniam amet harum, asperiores eligendi?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis quas sit rerum iste esse aut animi cum, harum eaque, praesentium explicabo saepe, eligendi deleniti aperiam adipisci aliquid odit ut?</p>   
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel temporibus veniam soluta enim blanditiis, quod vero nobis omnis delectus aliquid ipsam voluptatibus eaque? Debitis dolorem modi dicta, natus quae aliquid?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sunt inventore nisi voluptatibus illo doloremque adipisci consequuntur totam enim quasi corporis distinctio deleniti quo ipsam veniam amet harum, asperiores eligendi?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis quas sit rerum iste esse aut animi cum, harum eaque, praesentium explicabo saepe, eligendi deleniti aperiam adipisci aliquid odit ut?</p>   
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel temporibus veniam soluta enim blanditiis, quod vero nobis omnis delectus aliquid ipsam voluptatibus eaque? Debitis dolorem modi dicta, natus quae aliquid?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sunt inventore nisi voluptatibus illo doloremque adipisci consequuntur totam enim quasi corporis distinctio deleniti quo ipsam veniam amet harum, asperiores eligendi?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis quas sit rerum iste esse aut animi cum, harum eaque, praesentium explicabo saepe, eligendi deleniti aperiam adipisci aliquid odit ut?</p>   
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel temporibus veniam soluta enim blanditiis, quod vero nobis omnis delectus aliquid ipsam voluptatibus eaque? Debitis dolorem modi dicta, natus quae aliquid?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sunt inventore nisi voluptatibus illo doloremque adipisci consequuntur totam enim quasi corporis distinctio deleniti quo ipsam veniam amet harum, asperiores eligendi?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis quas sit rerum iste esse aut animi cum, harum eaque, praesentium explicabo saepe, eligendi deleniti aperiam adipisci aliquid odit ut?</p>   
-
+                    
                 </article>
             </main>
 
@@ -83,6 +95,6 @@
 
 
 
-<script src="../anders_page/libs/jquery/jquery-3.3.1.min.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,40 @@
+.gallery{
+    margin-top: 3rem;
+    max-width: 98%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.figure1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  grid-column: span 2;
+  grid-row: span 2;
+ }
+ .figure2 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  grid-column: span 2;
+  grid-row: span 3;
+ }
+ .figure-img {    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 767px){
+    .figure1 {
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        grid-column: span 2;
+        grid-row: span 2;
+       }
+       .figure2 {
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        grid-column: span 2;
+        grid-row: span 3;
+       }
+}

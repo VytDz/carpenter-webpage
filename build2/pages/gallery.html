@@ -4,71 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- **************************** Fonts ******************************* -->
     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Oxygen" rel="stylesheet">   
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+    <!-- **************************** End Fonts *************************** -->
+
+    <!-- **************************** Libs ******************************** -->      
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css"> 
-    <link rel="stylesheet" href="../libs/normalize_css/normalize.css">        
-    <link rel="stylesheet" href="../css/tmp.css"> 
-    <link rel="stylesheet" href="../css/main.css">       
+    <link rel="stylesheet" href="../libs/normalize_css/normalize.css">
+    <!-- **************************** End Libs **************************** -->  
+    
+    <!-- **************************** Styles ****************************** -->  
+    <link rel="stylesheet" href="../css/gallery.css"> 
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- **************************** End Styles *************************** -->         
     <title>SnekkerAnders</title>
 </head>
-<body id="gallery">    
-    <div id="wrapper" class="container-fluid clearfix">
+<body id="gallery" class="container-fluid clearfix">    
+    <div id="wrapper" >
         <header class="row">
-            <nav class="col-md my-4">
+            <nav class="col my-4 main-menu">
                 <ul class="row mx-auto">
-                    <li class="col-1"><a href="../pages/galleryEn.html"><img src="../img/icons/if_flag-united-kingdom_748024.png" alt=""></a></li>
-                    <li class="col-md "><a href="../index.html">Hjem</a></li>
-                    <li class="col-md "><a href="../pages/gallery.html">Galleri</a></li>                    
-                    <li class="col-md "><a href="../pages/about.html">Om oss</a></li>                
-                    <li class="col-md "><a href="../pages/contacts.html">Kontakt oss</a></li>  
+                    <li class="col-1"><a href="../pages/indexEn.html"><img src="../img/icons/if_flag-united-kingdom_748024.png" alt=""></a></li>
+                    <li class="col"><a href="../index.html">Hjem</a></li>
+                    <li class="col"><a href="../pages/gallery.html">Galleri</a></li>                    
+                    <li class="col"><a href="../pages/about.html">Om oss</a></li>                
+                    <li class="col"><a href="../pages/contacts.html">Kontakt oss</a></li>  
                 </ul> <!-- end row -->  
-            </nav> 
-            <div id="logo" class="col-md-2 my-1">
+            </nav>
+
+            <nav class="col my-4 drop-menu">
+                <button  onclick="toggleDropdown()"><i class="fas fa-bars fa-2x"></i></button>
+                <ul id="my-dropdown" class="row mx-auto">
+                    <li class=""><a href="../pages/indexEn.html"><img src="../img/icons/if_flag-united-kingdom_748024.png" alt=""></a></li>
+                    <li class=""><a href="../index.html">Hjem</a></li>
+                    <li class=""><a href="../pages/gallery.html">Galleri</a></li>                    
+                    <li class=""><a href="../pages/about.html">Om oss</a></li>                
+                    <li class=""><a href="../pages/contacts.html">Kontakt oss</a></li>  
+                </ul> <!-- end row -->  
+            </nav>
+
+            <div id="logo" class="col-2 my-1">
                 <h2 >Anders<br>Poulsen</h2> 
             </div>     
         </header><!-- End row -->
-    
+             
+        <main class="gallery">                
+            <figure class="figure1">                    
+                <a href="../img/gallery/housesAndRenovations/1.jpg"><img class="figure-img" src="../img/gallery/housesAndRenovations/1.jpg" alt="picture of a house"></a>
+            </figure>
+                <a href="../img/gallery/housesAndRenovations/2.jpg"><img class="figure-img" src="../img/gallery/housesAndRenovations/2.jpg" alt="picture of a house"></a>
+            <figure class="figure1">
+                <a href="../img/gallery/housesAndRenovations/3.jpg"><img class="figure-img" src="../img/gallery/housesAndRenovations/3.jpg" alt="picture of a house"></a>
+            </figure>
+            <figure class="figure1">
+                <a href="../img/gallery/housesAndRenovations/4.jpg"><img class="figure-img" src="../img/gallery/housesAndRenovations/4.jpg" alt="picture of a house"></a>
+            </figure>
+            <figure class="figure1">
+                <a href="../img/gallery/housesAndRenovations/5.jpg"><img class="figure-img" src="../img/gallery/housesAndRenovations/5.jpg" alt="picture of a house">  </a>
+            </figure>
+            <figure class="figure1">
+                <a href="../img/gallery/huts/1.jpg"><img class="figure-img" src="../img/gallery/huts/1.jpg" alt="picture of a hut">   </a>
+            </figure>
+            <figure class="figure1">              
+                <a href="../img/gallery/huts/2.jpg"><img class="figure-img" src="../img/gallery/huts/2.jpg" alt="picture of a hut"> </a>
+            </figure>
+            <figure class="figure1">      
+                <a href="../img/gallery/interiors/1.jpg"><img class="figure-img" src="../img/gallery/interiors/1.jpg" alt="picture of interior"></a>
+            </figure>
+            <figure class="figure2">             
+                <a href="../img/gallery/stairs/2.jpg"><img class="figure-img" src="../img/gallery/stairs/2.jpg" alt="picture of stairs"></a>
+            </figure>
+            <figure class="figure2">
+                <a href="../img/gallery/stairs/3.jpg"><img class="figure-img" src="../img/gallery/stairs/3.jpg" alt="picture of stairs"></a>
+            </figure>
+            <figure class="figure2">
+                <a href="../img/gallery/stairs/4.jpg"><img class="figure-img" src="../img/gallery/stairs/4.jpg" alt="picture of stairs"></a>
+            <figure class="figure2">
+                <a href="../img/gallery/stairs/5.jpg"><img class="figure-img" src="../img/gallery/stairs/5.jpg" alt="picture of stairs"></a>             
+            </figure>                
+        </main>
 
-    
-        <div class="row my-5">
-            <main class="col-md-10">
-                <article id="my-row" class="row mx-4">                    
-                    <a class="col-6" href="../img/gallery/housesAndRenovations/1.jpg"><img class="figure-img" src="../img/gallery/housesAndRenovations/1.jpg" alt="picture of a house"></a>
-                    
-                    <a class="col-6" href="../img/gallery/housesAndRenovations/2.jpg"><img class="figure-img" src="../img/gallery/housesAndRenovations/2.jpg" alt="picture of a house"></a>
-                
-                    <a class="col-6" href="../img/gallery/housesAndRenovations/3.jpg"><img class="figure-img" src="../img/gallery/housesAndRenovations/3.jpg" alt="picture of a house"></a>
-                
-                    <a class="col-6" href="../img/gallery/housesAndRenovations/4.jpg"><img class="figure-img" src="../img/gallery/housesAndRenovations/4.jpg" alt="picture of a house"></a>
-                
-                    <a class="col-6" href="../img/gallery/housesAndRenovations/5.jpg"><img class="figure-img" src="../img/gallery/housesAndRenovations/5.jpg" alt="picture of a house">  </a>
-                    
-                    <a class="col-6" href="../img/gallery/huts/1.jpg"><img class="figure-img" src="../img/gallery/huts/1.jpg" alt="picture of a hut">   </a>
-                                          
-                    <a class="col-6" href="../img/gallery/huts/2.jpg"><img class="figure-img" src="../img/gallery/huts/2.jpg" alt="picture of a hut"> </a>
-                                
-                    <a class="col-6" href="../img/gallery/interiors/1.jpg"><img class="figure-img" src="../img/gallery/interiors/1.jpg" alt="picture of interior"></a>
-                                         
-                    <a class="col-3" href="../img/gallery/stairs/2.jpg"><img class="figure-img" src="../img/gallery/stairs/2.jpg" alt="picture of stairs"></a>
-                    
-                    <a class="col-3" href="../img/gallery/stairs/3.jpg"><img class="figure-img" src="../img/gallery/stairs/3.jpg" alt="picture of stairs"></a>
-                    
-                    <a class="col-3" href="../img/gallery/stairs/4.jpg"><img class="figure-img" src="../img/gallery/stairs/4.jpg" alt="picture of stairs"></a>
-                    
-                    <a class="col-3" href="../img/gallery/stairs/5.jpg"><img class="figure-img" src="../img/gallery/stairs/5.jpg" alt="picture of stairs"></a>             
-                </article>
-            </main>
-
-            <!-- <aside class="col-md ">
-                <article>                        
-                    <h2 class="text-center">Partners</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quisquam sit unde perferendis ad magnam nostrum quis, maiores facilis minus fugiat accusantium doloremque, temporibus, maxime consequatur ex nesciunt ut? Nulla.</p>
-                    <h2 class="text-center">Customer reviews</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quisquam sit unde perferendis ad magnam nostrum quis, maiores facilis minus fugiat accusantium doloremque, temporibus, maxime consequatur ex nesciunt ut? Nulla.</p>                            
-                </article>
-            </aside> -->
-        </div><!-- End Row -->       
+        <!-- <aside class="col-md ">
+            <article>                        
+                <h2 class="text-center">Partners</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quisquam sit unde perferendis ad magnam nostrum quis, maiores facilis minus fugiat accusantium doloremque, temporibus, maxime consequatur ex nesciunt ut? Nulla.</p>
+                <h2 class="text-center">Customer reviews</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quisquam sit unde perferendis ad magnam nostrum quis, maiores facilis minus fugiat accusantium doloremque, temporibus, maxime consequatur ex nesciunt ut? Nulla.</p>                            
+            </article>
+        </aside> -->
+           
     
 
     
@@ -94,7 +120,6 @@
 
 
 
-<script src="../js/jsGallery/gallery.js"></script>
-
+    <script src="../js/main.js"></script>
 </body>
 </html>

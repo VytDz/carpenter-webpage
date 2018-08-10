@@ -1,26 +1,16 @@
 //************** Responsive design dropdown menu******************
-// toggle dropdown content visibility on and off
-function dropMenu() {
-    document.getElementById("mDropdown").classList.toggle("show");
-    
-    
+
+//******** Function for showing and hiding dropdown menu ************
+function toggleDropdown() {    
+    document.querySelector("#my-dropdown").classList.add("show"); 
 }
 
-// close dropdown if user clicks outside of it
-
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')){
-
-        var dropdowns = document.getElementsByClassName("mDropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')){
-                openDropdown.classList.remove('show');
-            }
-        }
+// Close the dropdown menu if the user clicks outside of it
+window.addEventListener('mouseup', function(event){    
+    var dropdown = document.querySelector('#my-dropdown');      
+    if (event.target != dropdown){
+        dropdown.classList.remove('show');        
     }
-};
+})
+//******** End Function for showing and hiding dropdown menu ********
 
-
-//************** End Responsive design dropdown menu**************

@@ -42,7 +42,8 @@ a{
         #logo{
             font-size: 1rem;
             font-family: $headline-font; 
-            margin-right: 3rem;                
+            margin-right: 3rem;
+            margin-top: 0.5rem;                
         }       
 
         ul{         
@@ -54,7 +55,17 @@ a{
             }          
         } 
     } 
+    .drop-menu{
+        display: none;
+    
+            i{
+                display: none;
+            }
+            ul{
+                display: none;
+            }
         
+    }  
 /* =================== End Header attributes ======================= */
 
 
@@ -86,32 +97,35 @@ aside{
 }
 
 /* =================== Pages attributes ============================= */
-body#index{
+#index{
     background: url("../img/backgrounds/ian-keefe-449093-unsplash.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;  
+    background-position: center;
     
 }
 
-body#gallery{
-    background: url("../img/backgrounds/sweet-ice-cream-photography-88265-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+#gallery{
+    
+    background-color: #D5D9DC;
+    
     
 }
 
 
-body#about{
+#about{
     background: url("../img/backgrounds/tomasz-pawluk-548096-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     
 }
 
-body#contacts{
+#contacts{
     background: url("../img/backgrounds/federico-bottos-674099-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    
     
 }
 
@@ -142,6 +156,7 @@ footer{
 /* =================== End footer attributes ======================= */
 
 /* =================== Media queries =============================== */
+
 @media (max-width: 767px){
     *{
         box-sizing: border-box;
@@ -149,41 +164,30 @@ footer{
         margin: 0;
     }
 
-
     body{   
         width: 100%;
         padding: 0;
         margin: 0;
-            // #wrapper{
-            //     position: relative;
-            // }
-
     }
-
-
 
     header{  
 
-        min-height: 3rem;                  
-        
-        ul{ 
-            li{
-                a{
-                display: none;
-                }                
-            }          
-        }
-
+        min-height: 3rem;
         #logo{
+            float:right;            
             h2{        
                 text-align: right;
                 font-size: 1.3rem;
-                font-family: $headline-font; 
+                font-family: $headline-font;
+                margin-top: 0.7rem; 
             }
         }        
   
     }      
     
+    .main-menu{
+        display: none;
+    }
 
     article{
             h2{
@@ -203,8 +207,26 @@ footer{
          font-size: 0.6rem;
        }
    }
+   .drop-menu{
+        display: block;
+        li{
+            margin-top: 0.4rem;
+        }    
+    }
+
+    #my-dropdown{
+        display: none;
+    }
+
+    .show{
+        display: block!important;
+    }
+    button{
+        background: none;
+        border:0;
+        padding: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
 }
-
-
-
 /* =================== End Media queries ========================= */
