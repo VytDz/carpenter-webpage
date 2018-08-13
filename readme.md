@@ -1,1 +1,1 @@
-Webpage is live @ www.snekkerpoulsen.com. Stil needs some fixes.
+Webpage is live @ www.snekkerpoulsen.com. Stil needs some refactoring and fixes.
