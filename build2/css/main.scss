@@ -98,10 +98,12 @@ aside{
 
 /* =================== Pages attributes ============================= */
 #index{
+    
     background: url("../img/backgrounds/ian-keefe-449093-unsplash.jpg");
     background-repeat: no-repeat;
-    background-size: cover;  
-    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
     
 }
 
@@ -116,6 +118,7 @@ aside{
 #about{
     background: url("../img/backgrounds/tomasz-pawluk-548096-unsplash.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     
@@ -123,6 +126,7 @@ aside{
 
 #contacts{
     background: url("../img/backgrounds/federico-bottos-674099-unsplash.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -135,6 +139,10 @@ aside{
 
 /* =================== Footer attributes =========================== */
 footer{
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     margin: 0;
     width: auto;
     background-color: rgba(20,18,20,0.5); 
